@@ -1,3 +1,4 @@
+"use strict";
 
 // Cards array that holds all cards element.
 const cards = document.querySelectorAll('.card');
@@ -85,7 +86,7 @@ function resetGame() {
     // Reset user fail movement and stars rating to default.
     failedMoveCount = 0;
     const stars = document.getElementsByClassName("fa-star-o");
-    for (star of stars) {
+    for (const star of stars) {
         star.classList.replace('fa-star-o', 'fa-star');
     }
 
@@ -149,7 +150,7 @@ function showCard(index) {
 
 // Mark opended cards as match and disable user interaction on them.
 function cardsMatch() {
-    for (openedCard of openedCards) {
+    for (const openedCard of openedCards) {
         openedCard.classList.remove('show', 'open');
         openedCard.classList.add('match', 'disableCard');
 
@@ -163,11 +164,11 @@ function cardsMatch() {
 // Display unmatched cards for a moment then hide them.
 function cardsUnMatch() {
     disableAllCards();
-    for (openedCard of openedCards) {
+    for (const openedCard of openedCards) {
         openedCard.classList.add('unmatched');
     };
     setTimeout(function () {
-        for (openedCard of openedCards) {
+        for (const openedCard of openedCards) {
             openedCard.classList.remove('show', 'open', 'unmatched');
         };
 
