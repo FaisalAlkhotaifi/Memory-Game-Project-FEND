@@ -4,19 +4,20 @@ Udacity Font-End Development Nonodegree Project 2: Memory Game
 
 ## Table of Contents
 
-* [Instructions](#instructions)
-* [Contributing](#contributing)
+* [Project Overview](#Project-Overview)
+* [Game Overview](#Game-Overview)
 
-## Instructions
+## Project Overview
 
-The starter project has some HTML and CSS styling to display a static version of the Memory Game project. You'll need to convert this project from a static project to an interactive one. This will require modifying the HTML and CSS files, but primarily the JavaScript file.
+This project intend to put all my knowledge and skills of HTML, CSS and Javascript on one real project.
 
-To get started, open `js/app.js` and start building out the app's functionality
+## Game Overview
 
-For specific, detailed instructions, look at the project instructions in the [Udacity Classroom](https://classroom.udacity.com/me).
+This game contains a board that has 16 cards arranged in a grid. And there are 8 different pair of symbol for each card (which means that each two cards have the same symbol). The cards are arranged randmonly in the board and their symbol are faced down.
 
-## Contributing
+###### How to Play
 
-This repository is the starter code for _all_ Udacity students. Therefore, we most likely will not accept pull requests.
-
-For details, check out [CONTRIBUTING.md](CONTRIBUTING.md).
+- Click on the cards to flip it over and see its symbol.
+- Click on other card to match with the first one
+- Once they are matched then poom you got the first pair, else they will be flipped back.
+- Keep try to match cards until you get them all.
